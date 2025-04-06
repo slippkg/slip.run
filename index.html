@@ -57,6 +57,24 @@
       flex-wrap: wrap;
       justify-content: center;
     }
+    #theme-toggle {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      background: none;
+      border: 1px solid var(--accent);
+      color: var(--accent);
+      border-radius: 6px;
+      padding: 0.4rem 0.6rem;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.2s ease;
+    }
+
+    #theme-toggle:hover {
+      background: var(--accent);
+      color: var(--bg);
+    }
   </style>
   <script>
     const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
@@ -65,7 +83,7 @@
   </script>
 </head>
 <body>
-  <button onclick="toggleTheme()">Toggle Theme</button>
+  <button id="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme">🌓</button>
   <script>
     function toggleTheme() {
       const current = document.documentElement.getAttribute('data-theme');
