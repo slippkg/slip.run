@@ -32,18 +32,15 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-img.logo {
-  color: var(--text);
+.logo {
   width: 200px;
   margin-bottom: 1rem;
   color: var(--text);
-  filter: drop-shadow(0 0 1px var(--bg));
 }
 p.tagline {
-  color: var(--text);
   font-size: 1.25rem;
   margin-bottom: 2rem;
-  color: #b0b0b0;
+  color: var(--text);
   font-size: clamp(1rem, 2vw, 1.25rem);
 }
 a {
