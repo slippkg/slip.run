@@ -12,15 +12,24 @@
       --bg: #ffffff;
       --text: #111111;
       --accent: #0066cc;
+      --text-muted: #444444;
     }
 
     [data-theme='dark'] {
       --bg: #0e0e0e;
       --text: #e0e0e0;
       --accent: #90cdf4;
+      --text-muted: #b0b0b0;
+    }
+
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
     }
 
     body {
+      position: relative;
       background-color: var(--bg);
       color: var(--text);
       font-family: system-ui, sans-serif;
@@ -36,6 +45,8 @@
     img.logo {
       width: 200px;
       margin-bottom: 1rem;
+      color: var(--text);
+      filter: drop-shadow(0 0 1px var(--bg));
     }
     p.tagline {
       font-size: 1.25rem;
@@ -58,9 +69,10 @@
       justify-content: center;
     }
     #theme-toggle {
-      position: absolute;
+      position: fixed;
       top: 1rem;
       right: 1rem;
+      z-idex: 100;
       background: none;
       border: 1px solid var(--accent);
       color: var(--accent);
@@ -92,7 +104,7 @@
       localStorage.setItem('theme', next);
     }
   </script>
-  <img src="logo.svg" alt="slip logo" class="logo">
+  <img src="logo.svg" alt="slip logo" class="logo" fill="currentColor"/>
   <p class="tagline">A minimal, trustless, declarative package and configuration manager</p>
   <div class="links">
     <a href="https://github.com/slippkg/cli">CLI</a>
