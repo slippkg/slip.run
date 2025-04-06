@@ -62,7 +62,7 @@ a:hover {
   position: fixed;
   top: 1rem;
   right: 1rem;
-  z-idex: 100;
+  z-index: 100;
   background: none;
   border: 1px solid var(--accent);
   color: var(--accent);
