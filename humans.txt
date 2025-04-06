@@ -1,0 +1,12 @@
+/* TEAM */
+Maintainer: sholt0r
+Site: https://slip.run
+Contact: hello [at] slip [dot] run
+
+/* PROJECT */
+Name: slip
+Type: Declarative system package manager
+Origin: Self-hosted reality mitigation
+
+/* THANKS */
+No dependencies were harmed in the making of this package.
